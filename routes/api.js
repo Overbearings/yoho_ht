@@ -2300,74 +2300,255 @@ router.get('/foryou', function(req, res, next) {
 	]
     res.send(arr)
 });
-
+// 推荐
 router.get('/cateListright', function(req, res, next) {
 	var arr=[
 		{
-			img:'//img11.static.yhbimg.com/goodsimg/2019/06/11/11/01616660eaea906141d603b86b32a81d66.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			img:'//img11.static.yhbimg.com/goodsimg/2019/04/18/18/0111b28b41fd8c8c01179d35697537b1e2.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'外套'
+		},
+		{
+			img:'//img10.static.yhbimg.com/goodsimg/2019/03/18/11/01c74e9315b0ebcf44c15fb58c62853bdf.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
 			title:'风衣'
 		},
 		{
-			img:'//img11.static.yhbimg.com/goodsimg/2019/06/11/11/011d36a94f922897075b5aac64d206e618.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
-			title:'风衣'
+			img:'//img12.static.yhbimg.com/goodsimg/2016/08/24/17/02edbc87c4fd7184a60bca0f86251d6037.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'皮靴'
 		},
 		{
-			img:'//img10.static.yhbimg.com/goodsimg/2019/06/11/10/01b083855d5e111cd17dc3e640dff83867.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
-			title:'风衣'
+			img:'//img13.static.yhbimg.com/goodsimg/2019/05/13/15/02254099da59c40ef189dbed8832a89dd6.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'包包'
 		},
 		{
-			img:'//img12.static.yhbimg.com/goodsimg/2019/06/11/11/02086c8cd53780b66639cfafcc46073799.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
-			title:'风衣'
+			img:'//img10.static.yhbimg.com/goodsimg/2019/07/04/11/013877dc659ea53a549699b692b19b89d9.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'运动鞋'
 		},
 		{
-			img:'//img10.static.yhbimg.com/goodsimg/2019/05/27/15/01c14879dd8db284e858852f5aa696fc73.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
-			title:'风衣'
+			img:'//img13.static.yhbimg.com/goodsimg/2019/03/04/21/02379d4049a5c784261964b5bf2e6fe223.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'毛衣'
 		},
 		{
-			img:'//img10.static.yhbimg.com/goodsimg/2019/05/22/11/0157dde408bfc092825128eee5a1851822.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
-			title:'风衣'
+			img:'//img11.static.yhbimg.com/goodsimg/2019/06/22/10/0113eb11a1cf862e300705d5e5a32f8aa4.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'男裤'
 		},
 		{
-			img:'//img10.static.yhbimg.com/goodsimg/2019/06/11/10/013b31f2e8c1743cc2cbcfa21650567670.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
-			title:'风衣'
+			img:'//img12.static.yhbimg.com/goodsimg/2019/06/17/20/02cea5de759c6a3f4ef8d5979b4ff4da12.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'套装'
 		},
 		{
-			img:'//img12.static.yhbimg.com/goodsimg/2019/06/19/16/02b04f76001063ea680abcef7530592ce8.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
-			title:'风衣'
+			img:'//img10.static.yhbimg.com/goodsimg/2019/05/23/14/013b5ebc0fa715a6b9512f5adcdc5c4f63.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'帽子'
 		},
 		{
-			img:'//img11.static.yhbimg.com/goodsimg/2019/06/19/16/01fc273733ed669c3909ab0393ea1f6c86.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
-			title:'风衣'
+			img:'//img12.static.yhbimg.com/goodsimg/2019/05/16/09/02961e6ff89b61f07bfcbf6e03ced25419.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'背心'
 		},
 		{
-			img:'//img13.static.yhbimg.com/goodsimg/2019/06/25/14/02c29375f66bbc5c70ec723be5ad05f2cb.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
-			title:'风衣'
+			img:'//img12.static.yhbimg.com/goodsimg/2019/05/13/16/026dc1ff4762ecf4cc34d884c0dc953571.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'袜子'
 		},
 		{
-			img:'//img13.static.yhbimg.com/goodsimg/2019/05/14/11/029a52981050566ea29d53aebfc8dd1091.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
-			title:'风衣'
+			img:'//img13.static.yhbimg.com/goodsimg/2019/06/05/13/026f2007f529093eb14deafed94257ebcc.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'生活用品'
 		},
 		{
-			img:'//img12.static.yhbimg.com/goodsimg/2019/06/02/16/02b194b3c016f1915f01f5751685700add.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
-			title:'风衣'
+			img:'//img10.static.yhbimg.com/goodsimg/2016/05/30/03/01519ca958c7549b195250736ae927a93d.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'太阳镜'
 		},
 		{
-			img:'//img13.static.yhbimg.com/goodsimg/2019/05/10/14/02cc21f6c4eb249513b6e16034079a7ca0.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
-			title:'风衣'
+			img:'//img13.static.yhbimg.com/goodsimg/2019/06/05/14/027f153f8db43f3e2da07dda44ab70cffd.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'夹克'
 		},
 		{
-			img:'//img12.static.yhbimg.com/goodsimg/2019/07/02/14/022259340c1ae231671c021711071894cd.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
-			title:'风衣'
-		},
-		{
-			img:'//img13.static.yhbimg.com/goodsimg/2019/06/19/18/027db6cc496c60075e879c23cdfc676256.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
-			title:'风衣'
+			img:'//img11.static.yhbimg.com/goodsimg/2018/12/29/19/01f2b5b69db7b235d380bf407fb8f2362e.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'家居服'
 		}
 	]
 	
 	
   	res.send(arr);
 });
+//上衣
+router.get('/cateListright1', function(req, res, next) {
+	var arr=[
+		{
+			img:'//img13.static.yhbimg.com/goodsimg/2019/05/31/22/0263c86529f1773e966d133420767734b0.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'全部上衣'
+		},
+		{
+			img:'//img10.static.yhbimg.com/goodsimg/2019/05/17/17/01c09235e8db6a868bd31d3c2356fc9f06.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'T恤'
+		},
+		{
+			img:'//img10.static.yhbimg.com/goodsimg/2019/06/13/15/01698570adaec4c843ea7683fc687fc605.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'防风外套'
+		},
+		{
+			img:'//img11.static.yhbimg.com/goodsimg/2019/06/19/15/0133437ec241f211ae0e85cc7138ff8073.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'衬衫'
+		},
+		{
+			img:'//img10.static.yhbimg.com/goodsimg/2019/04/25/17/012b5eced513897c642ce12f585b993e39.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'夹克'
+		},
+		{
+			img:'//img10.static.yhbimg.com/goodsimg/2019/04/11/18/0193da77b1f4bd6d72b9a79d722111ec8e.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'卫衣'
+		},
+		{
+			img:'//img13.static.yhbimg.com/goodsimg/2019/06/30/15/02b31d5b1d5798bdde36ecb51b2b99486e.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'背心'
+		},
+		{
+			img:'//img10.static.yhbimg.com/goodsimg/2019/03/04/14/01291e4215a941548e23647e77362f8989.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'大衣/风衣'
+		},
+		{
+			img:'//img12.static.yhbimg.com/goodsimg/2019/03/04/17/02eeaee3db980c78c4422517f52bc0504d.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'马甲'
+		},
+		{
+			img:'//img12.static.yhbimg.com/goodsimg/2018/11/21/15/02c138905299362aa44103a4dcbb4c8be9.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'家居服'
+		},
+		{
+			img:'//img12.static.yhbimg.com/goodsimg/2019/03/05/14/0266cb03ff838b6609f5d6b41cb1022045.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'毛衣/针织'
+		},
+		
+	]
+	
+	
+  	res.send(arr);
+});
+//裤装
+router.get('/cateListright2', function(req, res, next) {
+	var arr=[
+		{
+			img:'//img10.static.yhbimg.com/goodsimg/2019/06/11/11/01413013303f95867e609c6b09623458b5.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'休闲裤'
+		},
+		{
+			img:'//img13.static.yhbimg.com/goodsimg/2019/05/17/17/02a384b67a8dc3f29d10235b938c30036f.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'短裤'
+		},
+		{
+			img:'//img12.static.yhbimg.com/goodsimg/2019/03/05/14/02e24e7c4a206647842afca819702fe76e.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'运动裤'
+		},
+		{
+			img:'//img13.static.yhbimg.com/goodsimg/2019/05/07/11/02c2e7df7da22dbee35e3c1e01d9388a62.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'牛仔裤'
+		},
+		{
+			img:'//img12.static.yhbimg.com/goodsimg/2019/04/10/14/02ba023bbfda16f70a277f46411d721607.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'连体裤'
+		},
+		{
+			img:'//img13.static.yhbimg.com/goodsimg/2017/11/01/16/022d674babd7d61f17cb8a81d9defc3a56.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'打底裤'
+		},
+		
+	]
+	
+	
+  	res.send(arr);
+});
+//鞋靴
+router.get('/cateListright3', function(req, res, next) {
+	var arr=[
+		{
+			img:'//img13.static.yhbimg.com/goodsimg/2019/06/28/17/02bcd14d96f790387caad3f247f8fe74ca.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'运动鞋'
+		},
+		{
+			img:'//img11.static.yhbimg.com/goodsimg/2019/04/10/19/01f127a9d1d062779bbcd838c8e1fb2a72.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'凉鞋'
+		},
+		{
+			img:'//img13.static.yhbimg.com/goodsimg/2019/07/03/17/02c2f692cdc81ea9051e67a7d5d8a35661.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'休闲鞋'
+		},
+		{
+			img:'//img13.static.yhbimg.com/goodsimg/2019/07/04/15/02ac0ba21e1c7be77149ba4cf9a8ba556c.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'靴子'
+		},
+		
+		
+	]
+	
+	
+  	res.send(arr);
+});
+//裙装
+router.get('/cateListright4', function(req, res, next) {
+	var arr=[
+		{
+			img:'//img10.static.yhbimg.com/goodsimg/2019/06/17/23/01c1ee3906b0711058f2d84a68e83e9bbc.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'连衣裙'
+		},
+		{
+			img:'//img13.static.yhbimg.com/goodsimg/2019/06/25/13/024270c0c38e095f94142b6246fd747df3.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'半身裙'
+		},
+	]
+  	res.send(arr);
+});
+//服饰
+router.get('/cateListright5', function(req, res, next) {
+	var arr=[
+		{
+			img:'//img13.static.yhbimg.com/goodsimg/2019/05/13/15/024f610f08c8aa46b26f806b37d1426023.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'袜子'
+		},
+		{
+			img:'//img13.static.yhbimg.com/goodsimg/2019/05/22/13/023b46906ec59d965167dc2751bc24a4aa.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'帽子'
+		},
+		{
+			img:'//img11.static.yhbimg.com/goodsimg/2019/06/03/18/0191b3275f94fef425996947ca3fee7f11.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'双肩包'
+		},
+		{
+			img:'//img12.static.yhbimg.com/goodsimg/2019/02/21/10/02a7f09bb4e9551ff2ce03a17a0f2c27f5.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'单肩包'
+		},
+		{
+			img:'//img10.static.yhbimg.com/goodsimg/2017/01/11/17/01a666a3a3812cf093c4acc3f3e15e4f33.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'太阳镜'
+		},
+		
+		
+	]
+	
+	
+  	res.send(arr);
+});
 
+router.get('/cateListright6', function(req, res, next) {
+	var arr=[
+		{
+			img:'//img13.static.yhbimg.com/goodsimg/2019/05/13/14/02a8c315988b671f93a8e408f22eca1737.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'毛绒玩偶'
+		},
+		{
+			img:'//img10.static.yhbimg.com/goodsimg/2019/05/29/09/0123d9b899193587f0ca749117bdd4f2e4.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'益智游戏'
+		},
+		{
+			img:'//img13.static.yhbimg.com/goodsimg/2019/06/27/18/02eabf84d0008cc6f4f6c13c5be5575cf7.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'玩具模型'
+		},
+		{
+			img:'//img11.static.yhbimg.com/goodsimg/2018/04/19/17/01a9e08ab39ae448eaa446d50c5fd381a7.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'生活用品'
+		},
+		
+		
+	]
+	
+	
+  	res.send(arr);
+});
 
 module.exports = router;
