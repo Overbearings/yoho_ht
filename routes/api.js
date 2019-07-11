@@ -65,7 +65,7 @@ router.get('/brandList', function (req, res, next) {
 
 		{
 			imgurl: "http://img11.static.yhbimg.com/yhb-img01/2019/06/04/17/01566a613461f43235adfecc88fcb7660e.jpg?imageView2/2/w/140/h/140/q/60",
-			href: '/mine'
+			href: '/tx'
 		},
 		{
 			imgurl: "http://img11.static.yhbimg.com/yhb-img01/2019/06/04/17/01284d201b8110de82cd6a138fa37cd507.jpg?imageView2/2/w/140/h/140/q/60",
@@ -2363,6 +2363,174 @@ router.get('/cateListright', function(req, res, next) {
 			img:'//img13.static.yhbimg.com/goodsimg/2019/06/19/18/027db6cc496c60075e879c23cdfc676256.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
 			title:'风衣'
 		}
+	]
+	
+	
+  	res.send(arr);
+});
+
+router.get('/cateTx', function(req, res, next) {
+	var arr=[
+		{
+			img:'//img11.static.yhbimg.com/goodsimg/2019/06/11/11/01616660eaea906141d603b86b32a81d66.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'TYAKASHA|男|女|TYAKASHA塔卡沙 X POPEYE 大力水手联名系列 童款100-140浅紫色背心',
+			price:'175',
+			noprice: '198',
+			url:'/home',
+			pic: 'http://127.0.0.1:3000/images/mine/lue.png'
+		},
+		{
+			img:'//img11.static.yhbimg.com/goodsimg/2019/06/11/11/011d36a94f922897075b5aac64d206e618.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'TYAKASHA|男|女|TYAKASHA塔卡沙 X POPEYE 大力水手联名系列 童款100-140雾黄色短袖T恤',
+			price:'140',
+			noprice: '158',
+			url:'/home',
+			pic: 'http://127.0.0.1:3000/images/mine/lue.png'
+		},
+		{
+			img:'//img10.static.yhbimg.com/goodsimg/2019/06/11/10/01b083855d5e111cd17dc3e640dff83867.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'TYAKASHA|男|女|TYAKASHA塔卡沙 X POPEYE 大力水手联名系列 童款100-140深紫撞色短袖T恤',
+			price:'148',
+			noprice: '168',
+			url:'/home',
+			pic: 'http://127.0.0.1:3000/images/mine/lue.png'
+		},
+		{
+			img:'//img12.static.yhbimg.com/goodsimg/2019/06/11/11/02086c8cd53780b66639cfafcc46073799.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'TYAKASHA|男|女|TYAKASHA塔卡沙 X POPEYE 大力水手联名系列 童款100-140天蓝色短袖T恤',
+			price:'140',
+			noprice: '158',
+			url:'/home',
+			pic: 'http://127.0.0.1:3000/images/mine/lue.png'
+		},
+		{
+			img:'//img10.static.yhbimg.com/goodsimg/2019/05/27/15/01c14879dd8db284e858852f5aa696fc73.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'kizzuruumu|男|女|kizzuruumu 男女童90-120码 运动撞色家居套装',
+			price:'112',
+			noprice: '139',
+			url:'/home',
+			pic: 'http://127.0.0.1:3000/images/mine/lue.png'
+		},
+		{
+			img:'//img10.static.yhbimg.com/goodsimg/2019/05/22/11/0157dde408bfc092825128eee5a1851822.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'Buling Bubble|男|女|Buling Bubble 男女童90-130 趣味印花短袖T恤',
+			price:'55',
+			noprice: '258',
+			url:'/home',
+			pic: 'http://127.0.0.1:3000/images/mine/lue.png'
+		},
+		{
+			img:'//img10.static.yhbimg.com/goodsimg/2019/06/11/10/013b31f2e8c1743cc2cbcfa21650567670.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'TYAKASHA|男|女|TYAKASHA塔卡沙 X POPEYE 大力水手联名系列 童款100-140粉色短袖T恤',
+			price:'140',
+			noprice: '158',
+			url:'/home',
+			pic: 'http://127.0.0.1:3000/images/mine/lue.png'
+		},
+		{
+			img:'//img12.static.yhbimg.com/goodsimg/2019/06/19/16/02b04f76001063ea680abcef7530592ce8.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'yiigoo 壹果|男|yiigoo 壹果 男童100-140码你好夏天无袖T恤',
+			price:'129',
+			noprice: '299',
+			url:'/home',
+			pic: 'http://127.0.0.1:3000/images/mine/lue.png'
+		},
+		{
+			img:'//img11.static.yhbimg.com/goodsimg/2019/06/19/16/01fc273733ed669c3909ab0393ea1f6c86.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'yiigoo 壹果|男|女|yiigoo 壹果 潮童100-140码萌猫胖虎短袖衬衫',
+			price:'121',
+			noprice: '369',
+			url:'/home',
+			pic: 'http://127.0.0.1:3000/images/mine/lue.png'
+		},
+		{
+			img:'//img13.static.yhbimg.com/goodsimg/2019/06/25/14/02c29375f66bbc5c70ec723be5ad05f2cb.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:"EOEO's梨小闲|女|EOEO's梨小闲 女潮童100-130码 撞色字母印花运动套装",
+			price:'121',
+			noprice: '369',
+			url:'/home',
+			pic: 'http://127.0.0.1:3000/images/mine/lue.png'
+		},
+		{
+			img:'//img13.static.yhbimg.com/goodsimg/2019/05/14/11/029a52981050566ea29d53aebfc8dd1091.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'MINI CHOC|女|MINI CHOC 女童110-150码趣味卡通印花衬衫',
+			price:'239',
+			noprice: '399',
+			url:'/home',
+			pic: 'http://127.0.0.1:3000/images/mine/lue.png'
+		},
+		{
+			img:'//img12.static.yhbimg.com/goodsimg/2019/06/02/16/02b194b3c016f1915f01f5751685700add.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'boxboxbox|男|女|boxboxbox 女童110-130码 微生物印花荷叶边上衣',
+			price:'168',
+			noprice: '240',
+			pic: 'http://127.0.0.1:3000/images/mine/lue.png'
+		},
+		{
+			img:'//img13.static.yhbimg.com/goodsimg/2019/05/10/14/02cc21f6c4eb249513b6e16034079a7ca0.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'babyONE|女|babyONE 女潮童90-140码细格纹小飞袖棉质衬衫',
+			price:'239',
+			noprice: '399',
+			url:'/home',
+			pic: 'http://127.0.0.1:3000/images/mine/lue.png'
+		},
+		{
+			img:'//img12.static.yhbimg.com/goodsimg/2019/07/02/14/022259340c1ae231671c021711071894cd.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'JUZI STORE|男|女|JUZI STORE 男女童80-130码 基本款字母印花衬衫',
+			price:'386',
+			noprice: '429',
+			url:'/home',
+			pic: 'http://127.0.0.1:3000/images/mine/lue.png'
+		},
+		{
+			img:'//img13.static.yhbimg.com/goodsimg/2019/06/19/18/027db6cc496c60075e879c23cdfc676256.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'yiigoo 壹果|女|yiigoo 壹果 女童100-140码剔透小冰无袖森系娃娃衫',
+			price:'129',
+			noprice: '299',
+			url:'/home',
+			pic: 'http://127.0.0.1:3000/images/mine/lue.png'
+		},
+		{
+			img:'//img12.static.yhbimg.com/goodsimg/2019/06/19/15/02125aae012c61f1a46866ff8d711f7970.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'yiigoo 壹果|女|yiigoo 壹果 女童100-140码海芋之恋娃娃衫',
+			price:'129',
+			noprice: '299',
+			url:'/home',
+			pic: 'http://127.0.0.1:3000/images/mine/lue.png'
+		},
+		{
+			img:'//img12.static.yhbimg.com/goodsimg/2019/06/13/11/02320641a20590ba68e40e3c34127bbc41.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'SOYO舍予|男|女|SOYO舍予 潮童90-130 格纹印花短袖衬衫',
+			price:'129',
+			noprice: '159',
+			url:'/home',
+			pic: 'http://127.0.0.1:3000/images/mine/lue.png'
+		},
+		{
+			img:'//img12.static.yhbimg.com/goodsimg/2019/05/10/14/02c84132d4002d8ff92f602f86b1466db4.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'babyONE|女|babyONE 女潮童90-140码细格纹小飞袖棉质衬衫',
+			price:'159',
+			noprice: '299',
+			url:'/home',
+			pic: 'http://127.0.0.1:3000/images/mine/lue.png'
+		},
+		{
+			img:'//img11.static.yhbimg.com/goodsimg/2019/05/07/16/01b4433843e29ff79b8fac4f577992c664.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'SOYO舍予|男|女|SOYO舍予 潮童90-130 天丝牛仔衬衫',
+			price:'159',
+			noprice: '199',
+			url:'/home',
+			pic: 'http://127.0.0.1:3000/images/mine/lue.png'
+		},
+		{
+			img:'//img12.static.yhbimg.com/goodsimg/2019/05/05/14/028b071c00f4d4addb2c54b4dfb5c015ba.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60/format/webp',
+			title:'yiigoo 壹果|女|yiigoo 壹果 女童100-140码萌妹柔柔娃娃衫',
+			price:'129',
+			noprice: '299',
+			url:'/home',
+			pic: 'http://127.0.0.1:3000/images/mine/lue.png'
+		},
+
 	]
 	
 	
