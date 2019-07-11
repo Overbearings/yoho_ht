@@ -65,7 +65,7 @@ router.get('/brandList', function (req, res, next) {
 
 		{
 			imgurl: "http://img11.static.yhbimg.com/yhb-img01/2019/06/04/17/01566a613461f43235adfecc88fcb7660e.jpg?imageView2/2/w/140/h/140/q/60",
-			href: '/mine'
+			href: '/tx'
 		},
 		{
 			imgurl: "http://img11.static.yhbimg.com/yhb-img01/2019/06/04/17/01284d201b8110de82cd6a138fa37cd507.jpg?imageView2/2/w/140/h/140/q/60",
