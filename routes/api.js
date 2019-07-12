@@ -247,48 +247,6 @@ router.get('/botpic', function (req, res, next) {
 	res.send(arr)
 });
 
-// 分类列表左
-router.get('/cateList', function (req, res, next) {
-	var arr = [{
-			id: 0,
-			title: '推荐'
-		},
-		{
-			id: 1,
-			title: '上衣'
-		},
-		{
-			id: 2,
-			title: '裤装'
-		},
-		{
-			id: 3,
-			title: '鞋靴'
-		},
-		{
-			id: 4,
-			title: '包类/装备'
-		},
-		{
-			id: 5,
-			title: '服配'
-		},
-		{
-			id: 6,
-			title: '创意生活'
-		},
-		{
-			id: 7,
-			title: '有食'
-		},
-		{
-			id: 8,
-			title: '有玩'
-		}
-	]
-	res.send(arr)
-});
-
 
 router.get('/orderP', function (req, res, next) {
 	var arr = [
@@ -2084,7 +2042,153 @@ router.get('/strSx', function(req, res, next) {
 	
   res.send(arr)
 });
-
+//资讯
+router.get('/ziXun', function (req, res, next) {
+	var arr = [
+	  {
+		img: 'http://img02.yohoboys.com/contentimg/2019/07/11/15/02a7c2b82c1aae0d8680882472829030fa.jpg?imageView2/1/w/640/h/275/q/60',
+		titles: '“如果他不是周杰伦，他就是那种会被我揍的篮球队友。”',
+		text: '有留意周杰伦ins账号的朋友，一定发现最近的他频频上传#打球视频#，还入手16800港币的天价Chanel篮球！周董对于篮球的热爱，一点也不亚于豪车和球鞋。作为狂热篮球爱好者，周董的球技到底是个什么水平？今天的文章就来不正经地剖析一下吧！ 杰伦和篮球的缘分 热爱值：❤️❤️❤️❤️❤️2000年，周',
+		month: '07月11',
+		time: '15:50'
+	  },
+	  {
+		img: 'http://img01.yohoboys.com/contentimg/2019/07/11/10/011c318eac5cca0317a92fffce0955256e.jpeg?imageView2/1/w/640/h/275/q/60',
+		titles: '这个特立独行的品牌如何紧紧抓住当代年轻人的心?丨专访塔卡沙主理人',
+		text: '对于塔卡沙 TYAKASHA 这个名字，相信很多人都不会陌生。毕竟作为一个覆盖多个年龄层次的服装品牌，无论是各大社交媒体的热度，还是官方线上店铺的销量，TYAKASHA 都在国内一众潮流服饰品牌中位列前茅。或许很多人都不知道，TYAKASHA 主理人童云并不是服装科班出身，亦曾经在一家美国公司任职插',
+		month: '07月11',
+		time: '10:05'
+	  },
+	  {
+		img: 'http://img01.yohoboys.com/contentimg/2019/07/11/10/01524daa4d677bdadcfd18277b6a063faa.jpg?imageView2/1/w/640/h/275/q/60',
+		titles: '壁纸丨长长长长腿姐妹花，笑容感染力满分分分分！',
+		text: 'IMAGE CREDIT INSTAGRAM@mocean__',
+		month: '07月11',
+		time: '10:05'
+	  },
+	  {
+		img: 'http://img02.yohoboys.com/contentimg/2019/07/10/16/0205911ebd89393423dd2d4ed7c67b7a98.jpg?imageView2/1/w/640/h/275/q/60',
+		titles: '潮流圈「绳」操作，到底有多神？',
+		text: '关于酷女孩与绳结如何在炎炎夏日正确相爱：在梦里当一枚乘风破浪的水手？又或者，解锁这 4 个“绳结爱好者”无法绕道的潮流品牌！没错，请吃下这份正经安利～001  Ottolinger   你也许有件自己最喜欢的T恤，它不能再穿了 … 试下把它拆开：）热衷搞破坏的 Ottolinger 首先是个柏林牌子',
+		month: '07月11',
+		time: '16:40'
+	  },
+	  {
+		img: 'http://img02.yohoboys.com/contentimg/2019/07/10/16/029ddf8bf55bd3f5024ba23bf91771b136.jpg?imageView2/1/w/640/h/275/q/60',
+		titles: '潮闻快食丨HUMAN MADE 发布 FW19 LOOKBOOK，黑红 AJ11 全新实物图曝光！',
+		text: ' HUMAN MADE FW19 LOOKBOOK 发布 日前，由 NIGO® 主理的潮流品牌 HUMAN MADE 发布了 FW19 的 LOOKBOOK 。全新一季的产品延续了 HUMAN MADE 的风格，心形的 Logo 依旧是最大的亮点，为大家带来连帽卫衣，夹克、西服等单品。同时，这次还加',
+		month: '07月11',
+		time: '16:35'
+	  },
+	  {
+		img: 'http://img02.yohoboys.com/contentimg/2019/07/09/16/029fc820b91a3ddd73ff5e877099c9afb4.jpg?imageView2/1/w/640/h/275/q/60',
+		titles: '潮闻快食 | Yohji Yamamoto打造香水系列！MADNESS x Teva全新联名登场',
+		text: ' Yohji Yamamoto 打造香水系列Nicholas Hlobo、Alex Israel、Tschabalala Self 以及 Jonas Wood 六位顶尖当代艺术家的合作打造，并重新演绎经典的 Capucines 手袋。近日，日本时装品牌 Yohji Yamamoto 正式推出「Yohj',
+		month: '07月11',
+		time: '16:35'
+	  },
+	  {
+		img: 'http://img02.yohoboys.com/contentimg/2019/07/09/15/0225f9c146c3d2106babd4c51c4d7bf48a.jpg?imageView2/1/w/640/h/275/q/60',
+		titles: '二次元轰炸时代，你的二次元初恋是谁？',
+		text: '真实地说，我一个几乎不看动画片的人，在一个星期内进了两次电影院，观影对象都是——动画片。一部是《千与千寻》、一部是《玩具总动员4》，前者是独自走进电影院回味童年，后者是朋友圈刷屏太多只想跟风。当然是好看的，认识了叉叉、潇洒公爵等可爱的小宝贝。二次元是真的火，作为已经承担起社会责任的大人，动画片不是只',
+		month: '07月11',
+		time: '15:35'
+	  },
+	  {
+		img: 'http://img01.yohoboys.com/contentimg/2018/07/09/10/01768e7bdd929a6e9e5c91c40241d13287.jpg?imageView2/1/w/640/h/275/q/60',
+		titles: '超高仿Supreme配件连“潮流警察”都没有办法？| Real or Fake',
+		text: '在上一期的《潮流警察出动！市面上10件Supreme高仿配件真假大对决（视频+多图）》中，Kelvin和咸旦已率先给大家对比了10款大热Supreme高仿配件中的6款，而在这一期中，我们将会带来另外4款的真假对比，其中有两款是仿真度90%以上的级别，如果不细心观察，大家分分钟会受骗买到假货！第二期的',
+		month: '07月09',
+		time: '10:35'
+	  },
+	  {
+		img: 'http://img02.yohoboys.com/contentimg/2019/07/09/13/027aecc8fea116b2b0ddfb0dbb69e77932.jpeg?imageView2/1/w/640/h/275/q/60',
+		titles: '顺风顺水的卡戴珊，这一次扑街了！',
+		text: '这两周金卡戴珊很忙。自己朝思暮想了十五年的塑身内衣品牌 Kimono 终于面世了。品牌会为不同肤色、不同体型的女性打造贴身衣物。尽管已经十分小心翼翼，但细心的观众还是发现：把「和服」作为内衣品牌名称的卡戴珊是不是「辱日」了？一时间日本消费者表达了强烈的不满，在网络上发起了实名抵制卡戴珊的活动。无论这',
+		month: '07月09',
+		time: '13:35'
+	  },
+	  {
+		img: 'http://img01.yohoboys.com/contentimg/2019/07/09/10/01eb49b1e22dd60bd851bf5e245372c904.jpg?imageView2/1/w/640/h/275/q/60',
+		titles: '别让你的夏天死气沉沉，来点冰激凌色，让回头率飙升！',
+		text: '在刚刚落幕的 2020 春夏大秀里，从服装到Sneaker，一改往日冰冷色调，从薰衣草紫、水蓝、柠檬黄到腮红粉...各种冰激凌色调，也太垂涎可口了吧~各大秀场仿佛在拿着扩音器呼喊，“接下来你们可以穿冰激凌色系了，什么黑白灰统统甩掉，可爱起来就完事了~”。国外潮流 ICON 马上响应这波流行趋势，在这',
+		month: '07月09',
+		time: '10:15'
+	  },
+	  {
+		img: 'http://img01.yohoboys.com/contentimg/2019/07/08/16/0144caac6f8e93ac46e4eaaea5965d57e1.jpg?imageView2/1/w/640/h/275/q/60',
+		titles: '脸上长痣是不是加分项？这些“优痣”青年证明给你看！',
+		text: '不知道你有没有一种感觉，随着年龄增大，身上的痣越来越多……作为20岁+的酷女孩们，脸上、身上都免不了有那么几颗甚至十几颗痣！虽然这不是一个必然规律，但也算是一个普遍现象了。从医学角度上来说，痣可以分为三种：皮内痣、交界痣、复合痣，这就关系到哪些痣可以“治”，哪些痣又不能碰的问题了。关于这一点，Zoy',
+		month: '07月08',
+		time: '16:15'
+	  },
+	  {
+		img: 'http://img01.yohoboys.com/contentimg/2019/07/08/13/012f348d35011826bb4b42431f08b3a32d.jpeg?imageView2/1/w/640/h/275/q/60',
+		titles: '只需0元，我们改装了一双媲美「The Ten」的匡威Chuck 70 | 球鞋大改造',
+		text: '2017-2019年，可以说是球鞋定制行业迎来丰收的年份。一众定制大神如The Shoe Surgeon早已如日方中，经它手定制的球鞋成为媒体报道的焦点，在鞋市上也是有市有价的狠货；运动品牌开始在球鞋定制上大造文章，线下展会与消费者互动的Event更比比皆是。不知不觉，球鞋定制已成为球鞋文化中重要的',
+		month: '07月08',
+		time: '13:40'
+	  },
+	  {
+		img: 'http://img01.yohoboys.com/contentimg/2018/07/08/09/01ebfd2f69ac724f59bebf24a154939a1a.jpg?imageView2/1/w/640/h/275/q/60',
+		titles: '穿上这件HUMAN MADE 短袖，才是夏天的顶配！',
+		text: '细心的老粉丝肯定有发现YOHO!BUY有货其实有很多敲有来头的品牌，HUMAN MADE就是其中之一啦~今天小编就来聊聊这个潮流巨头都爱的品牌吧！毕竟穿上HUMAN MADE短袖，才是夏天的顶配！01# HUMAN MADE 什么来头 #按照惯例还是先放上视频，老铁们赶紧点开了解一下HUMAN MA',
+		month: '07月08',
+		time: '09:12'
+	  },
+	  {
+		img: 'http://img01.yohoboys.com/contentimg/2019/07/08/11/013b9250948058c7234418a071b3242df8.jpg?imageView2/1/w/640/h/275/q/60',
+		titles: '潮流板报 | 潮味十足的电饭煲，你会想要吗？',
+		text: '叮咚，本周潮流板报奉上！⬇️⬇️⬇️“I’D RATHER STAY HOME”I am Telling You： 在所有人都以为 Anti Social Social Club 已“死”的时候，他们今年却动作频频。虽然发任何官宣消息都会被底下的评论骂个底朝天，但是 ASSC 的新品却一直没断过。撇',
+		month: '07月08',
+		time: '11:12'
+	  },
+	  {
+		img: 'http://img02.yohoboys.com/contentimg/2019/07/08/09/0226a80f0378d948cc3d5b8402e790b8f6.jpg?imageView2/1/w/640/h/275/q/60',
+		titles: '中国创造力 | 曾经的国货之光，今番回潮',
+		text: '2019年注定是国民品牌元年，老字号品牌纷纷成为潮人的心头好。中国元素亦影响着各行各业，在时尚届，愈来愈多的设计师以中国文化为设计元素，制造一个又一个的「网红」产品和抢购潮，甚至引领新的潮流，令人惊喜。国内开花，国外「更香」，在过去的一周，Pitti Immagine Uomo男装周上，中国最受瞩目',
+		month: '07月08',
+		time: '09:32'
+	  },
+	  {
+		img: 'http://img02.yohoboys.com/contentimg/2019/07/08/10/0272ace2882609f6b194abbc303877086c.jpg?imageView2/1/w/640/h/275/q/60',
+		titles: 'SNKR Girls｜可爱在性感面前一文不值？但今天的球鞋女生们两个都有！7.1-7.7',
+		text: '注意！注意！注意！[6.24 - 6.30 ]得奖的 SNKR Girls要揭晓了！谨记不要盗图来投稿哦！另外，我们发现个别选手存在刷票行为，将取消资格把名次顺延，请保持诚实～[ 6.24-6.30]中获奖的SNKR Girls分别是：第一名：23号Kylee1676票第2、3名分别是：18号陈丽热',
+		month: '07月08',
+		time: '10:35'
+	  },
+	  {
+		img: 'http://img01.yohoboys.com/contentimg/2019/07/05/17/01262e1956153bb6e663f3166195cfbf6d.jpg?imageView2/1/w/640/h/275/q/60',
+		titles: '潮闻快食 | adidas YEEZY BOOST 350 V2 迎来全新配色，BAPE® 发布全新 2019 AW系列型录',
+		text: '潮闻快食 | adidas YEEZY BOOST 350 V2 迎来全新配色，BAPE® 发布全新 2019 AW系列型录',
+		month: '07月05',
+		time: '17:35'
+	  },
+	  {
+		img: 'http://img02.yohoboys.com/contentimg/2019/07/05/17/02a7d57eadefcb16da89e6ac04b201b120.jpg?imageView2/1/w/640/h/275/q/60',
+		titles: '憋了那么久，终于有人来吐槽时尚编辑了。',
+		text: '“你又要搞事情了是吧？”“是的，我又来搞事情了。”😊老板说我今天这个选题是要“搞事情”，是的没错，最近选题创意匮乏，我想了很久准备把这个想做又一直不太敢做的话题拿出来遛遛。之前不敢写是因为它很容易“得罪”一些人，又很容易“害了”一些人……所以，今天参与这个选题的，都是我的真朋友，都是时尚圈的真勇士。',
+		month: '07月05',
+		time: '17:23'
+	  },
+	  {
+		img: 'http://img01.yohoboys.com/contentimg/2019/07/05/17/018d411d14ccf803209e8f0ca921df52fd.jpeg?imageView2/1/w/640/h/275/q/60',
+		titles: '现在长得跟潮牌似的LV、DIOR，怎还卖那么贵？',
+		text: '最近不知道大家有没有和我一样的疑惑，看看奢侈品牌突然和八竿子打不着的街头艺术家合作，我脑袋里都会冒出”？？！”。然后再看看最近该品牌的业绩报表，立刻就秒懂了。因为再不搞点噱头，可能真的要倒闭了。论噱头和圈钱，潮牌们真的要叫LV一声“爸爸”。最近LV不仅悄悄换了Logo，也在不知不觉中从那个“只有中国',
+		month: '07月05',
+		time: '17:16'
+	  },
+	  {
+		img: 'http://img01.yohoboys.com/contentimg/2019/07/04/13/0174f9bc9d17584364d595fdf749cdd438.jpg?imageView2/1/w/640/h/275/q/60',
+		titles: '潮闻快食 | LV发布古龙水系列,LACOSTE发布COURTLINE动感撞线系列',
+		text: 'Louis Vuitton 发布 2019 古龙水系列Louis Vuitton 调香大师 Jacques Cavallier Belletrud 以珍稀的高品质天然原料调制出太阳之歌（Sun Song）、绿园（Cactus Garden）和午后之泳（Afternoon Swim）。仿若动身前往夏日',
+		month: '07月04',
+		time: '13:16'
+	  }
+	]
+	res.send(arr)
+  })
+  
 
 // 为你优选新品
 router.get('/foryou', function(req, res, next) {
@@ -2691,7 +2795,28 @@ router.get('/cateListright5', function(req, res, next) {
 	]
   	res.send(arr);
 });
- 
+//有玩
+router.get('/cateListright6', function(req, res, next) {
+	var arr=[
+		{
+			img:'//img13.static.yhbimg.com/goodsimg/2019/05/13/14/02a8c315988b671f93a8e408f22eca1737.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'毛绒玩偶'
+		},
+		{
+			img:'//img10.static.yhbimg.com/goodsimg/2019/05/29/09/0123d9b899193587f0ca749117bdd4f2e4.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'益智游戏'
+		},
+		{
+			img:'//img13.static.yhbimg.com/goodsimg/2019/06/27/18/02eabf84d0008cc6f4f6c13c5be5575cf7.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'玩具模型'
+		},
+		{
+			img:'//img11.static.yhbimg.com/goodsimg/2018/04/19/17/01a9e08ab39ae448eaa446d50c5fd381a7.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
+			title:'生活用品'
+		},
+	]
+  	res.send(arr);
+});
 
 /* GET home page. */
 //衬衫
@@ -4632,26 +4757,6 @@ router.get('/slacksList', function(req, res, next) {
 	res.send(arr);
 });
 
-router.get('/cateListright6', function(req, res, next) {
-	var arr=[
-		{
-			img:'//img13.static.yhbimg.com/goodsimg/2019/05/13/14/02a8c315988b671f93a8e408f22eca1737.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
-			title:'毛绒玩偶'
-		},
-		{
-			img:'//img10.static.yhbimg.com/goodsimg/2019/05/29/09/0123d9b899193587f0ca749117bdd4f2e4.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
-			title:'益智游戏'
-		},
-		{
-			img:'//img13.static.yhbimg.com/goodsimg/2019/06/27/18/02eabf84d0008cc6f4f6c13c5be5575cf7.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
-			title:'玩具模型'
-		},
-		{
-			img:'//img11.static.yhbimg.com/goodsimg/2018/04/19/17/01a9e08ab39ae448eaa446d50c5fd381a7.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60',
-			title:'生活用品'
-		},
-	]
-  	res.send(arr);
-});
+
 
 module.exports = router;
