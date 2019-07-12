@@ -4653,5 +4653,138 @@ router.get('/cateListright6', function(req, res, next) {
 	]
   	res.send(arr);
 });
+router.get('/wangguan', function (req, res, next) {
+  var arr = [
+    {
+      img: '//img10.static.yhbimg.com/goodsimg/2019/03/18/11/0148df032d97bcab3456f9eb65ba4020dc.jpg?imageMogr2/thumbnail/75x114/background/d2hpdGU=/position/center/quality/60/format/webp',
+      logo: '1',
+      title: 'Garfield by fun 潮童110-140码 卡通印花短袖T恤',
+      price: '￥239'
+    },
+    {
+      img: '//img11.static.yhbimg.com/goodsimg/2019/07/03/17/01311fcfd2fe72318160d48973c35139c8.jpg?imageMogr2/thumbnail/75x114/background/d2hpdGU=/position/center/quality/60/format/webp',
+      logo: '2',
+      title: 'Onitsuka Tiger kids 鬼塚虎 小中童 MEXICO 66 PS运动鞋',
+      price: '￥450'
+    },
+    {
+      img: '//img12.static.yhbimg.com/goodsimg/2019/06/11/11/02caed465b33b5b9ab2fe7127f36f57496.jpg?imageMogr2/thumbnail/75x114/background/d2hpdGU=/position/center/quality/60/format/webp',
+      logo: '3',
+      title: 'TYAKASHA塔卡沙 X POPEYE 大力水手联名系列 童款100-140紫色撞色短裤',
+      price: '￥210'
+    },
+    {
+      img: '//img11.static.yhbimg.com/goodsimg/2017/05/06/14/01720a0bb8f3f295bb8a6e459d950017af.jpg?imageMogr2/thumbnail/75x114/background/d2hpdGU=/position/center/quality/60/format/webp',
+      logo: '4',
+      title: 'Timberland 大童经典防水高帮黄靴',
+      price: '￥1990'
+    },
+    {
+      img: '//img10.static.yhbimg.com/goodsimg/2019/03/24/17/010cbb41736fb874aca29739100107c08a.jpg?imageMogr2/thumbnail/75x114/background/d2hpdGU=/position/center/quality/60/format/webp',
+      logo: '5',
+      title: 'JUZI STORE  女童80-130码 轻薄牛仔假两件背带裙',
+      price: '￥450'
+    },
+    {
+      img: '//img12.static.yhbimg.com/goodsimg/2019/06/28/17/02bcd14d96f790387caad3f247f8fe74ca.jpg?imageMogr2/thumbnail/75x114/background/d2hpdGU=/position/center/quality/60/format/webp',
+      logo: '6',
+      title: 'Onitsuka Tiger kids 鬼塚虎 幼小童 MEXICO 66 TS运动鞋',
+      price: '￥350'
+    },
+    {
+      img: '//img11.static.yhbimg.com/goodsimg/2019/06/17/23/017cb595e48b587508ebdd67b9fc181089.jpg?imageMogr2/thumbnail/75x114/background/d2hpdGU=/position/center/quality/60/format/webp',
+      logo: '7',
+      title: 'yiigoo 壹果 女童100-140码奶油娃娃连衣裙',
+      price: '￥129'
+    },
+    {
+      img: '//img13.static.yhbimg.com/goodsimg/2019/06/11/11/02086c8cd53780b66639cfafcc46073799.jpg?imageMogr2/thumbnail/75x114/background/d2hpdGU=/position/center/quality/60/format/webp',
+      logo: '8',
+      title: 'TYAKASHA塔卡沙 X POPEYE 大力水手联名系列 童款100-140天蓝色短袖T恤',
+      price: '￥140'
+    },
+    {
+      img: '//img12.static.yhbimg.com/goodsimg/2018/04/03/17/02c6f3c5b68b277ab4ef9c125449f3def8.jpg?imageMogr2/thumbnail/75x114/background/d2hpdGU=/position/center/quality/60/format/webp',
+      logo: '9',
+      title: 'Garfield by fun 卡通印花背带短裤',
+      price: '¥281'
+    },
+    {
+      img: '//img11.static.yhbimg.com/goodsimg/2019/06/11/11/01413013303f95867e609c6b09623458b5.jpg?imageMogr2/thumbnail/75x114/background/d2hpdGU=/position/center/quality/60/format/webp',
+      logo: '10',
+      title: 'TYAKASHA塔卡沙 X POPEYE 大力水手联名系列 童款100-140米色九分裤',
+      price: '¥262'
+    },
+    {
+      img: '//img11.static.yhbimg.com/goodsimg/2019/06/11/10/013b31f2e8c1743cc2cbcfa21650567670.jpg?imageMogr2/thumbnail/75x114/background/d2hpdGU=/position/center/quality/60/format/webp',
+      logo: '11',
+      title: 'TYAKASHA塔卡沙 X POPEYE 大力水手联名系列 童款100-140粉色短袖T恤',
+      price: '¥140'
+    },
+    {
+      img: '//img12.static.yhbimg.com/goodsimg/2019/05/04/09/023940d744a10de3159dd703c53ba37963.jpg?imageMogr2/thumbnail/75x114/background/d2hpdGU=/position/center/quality/60/format/webp',
+      logo: '12',
+      title: 'Buling Bubble 男女童90-130 趣味卡通印花T恤',
+      price: '¥55'
+    },
+    {
+      img: '//img10.static.yhbimg.com/goodsimg/2019/05/16/10/0133fecd9726fe88612dc70fba24a76d7f.jpg?imageMogr2/thumbnail/75x114/background/d2hpdGU=/position/center/quality/60/format/webp',
+      logo: '13',
+      title: 'yiigoo 壹果 女童100-140码菠萝乐园防晒服',
+      price: '¥199'
+    },
+    {
+      img: '//img11.static.yhbimg.com/goodsimg/2019/06/11/10/012028add1023ff15bec838e9d115139d0.jpg?imageMogr2/thumbnail/75x114/background/d2hpdGU=/position/center/quality/60/format/webp',
+      logo: '14',
+      title: 'TYAKASHA塔卡沙 X POPEYE 大力水手联名系列 童款100-140黄色短袖T恤',
+      price: '¥147'
+    },
+    {
+      img: '//img13.static.yhbimg.com/goodsimg/2019/06/11/10/02d061eee8244682c5605c0accdd1de6b8.jpg?imageMogr2/thumbnail/75x114/background/d2hpdGU=/position/center/quality/60/format/webp',
+      logo: '15',
+      title: 'TYAKASHA塔卡沙 X POPEYE 大力水手联名系列 童款100-140绿紫条纹短袖T恤',
+      price: '¥147'
+    },
+    {
+      img: '//img11.static.yhbimg.com/goodsimg/2019/05/16/10/01d66e597f0c5645007cc48c938311895a.jpg?imageMogr2/thumbnail/75x114/background/d2hpdGU=/position/center/quality/60/format/webp',
+      logo: '16',
+      title: 'JUZI STORE 男女潮童 泡泡纱遮阳渔夫帽',
+      price: '¥147'
+    },
+    {
+      img: '//img10.static.yhbimg.com/goodsimg/2019/06/19/16/01fc273733ed669c3909ab0393ea1f6c86.jpg?imageMogr2/thumbnail/75x114/background/d2hpdGU=/position/center/quality/60/format/webp',
+      logo: '17',
+      title: 'yiigoo 壹果 潮童100-140码萌猫胖虎短袖衬衫',
+      price: '￥129'
+    },
+    {
+      img: '//img10.static.yhbimg.com/goodsimg/2019/06/18/00/0172548a8fe944faa56a14c10545e7bf1e.jpg?imageMogr2/thumbnail/75x114/background/d2hpdGU=/position/center/quality/60/format/webp',
+      logo: '18',
+      title: 'yiigoo 壹果 女童100-140码仙女桔梗蕾丝连衣裙',
+      price: '￥189'
+    },
+    {
+      img: '//img10.static.yhbimg.com/goodsimg/2019/05/13/15/015ce05491c133dce145818ae3c004851b.jpg?imageMogr2/thumbnail/75x114/background/d2hpdGU=/position/center/quality/60/format/webp',
+      logo: '19',
+      title: 'yiigoo 壹果 潮童偏光太阳镜',
+      price: '¥129'
+    },
+    {
+      img: '//img12.static.yhbimg.com/goodsimg/2019/06/19/16/02b04f76001063ea680abcef7530592ce8.jpg?imageMogr2/thumbnail/75x114/background/d2hpdGU=/position/center/quality/60/format/webp',
+      logo: '20',
+      title: 'yiigoo 壹果 男童100-140码你好夏天无袖T恤',
+      price: '¥168'
+    },
+    {
+      img: '//img12.static.yhbimg.com/goodsimg/2019/03/15/09/02c43e706bedf1ea1b846974b6ecba7a9c.jpg?imageMogr2/thumbnail/75x114/background/d2hpdGU=/position/center/quality/60/format/webp',
+      logo: '21',
+      title: 'strawberry bread 男女童 100-140 连帽多袋工装外套',
+      price: '￥499'
+    }
+
+  ]
+
+  res.send(arr)
+})
 
 module.exports = router;
