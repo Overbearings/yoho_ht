@@ -69,47 +69,47 @@ router.get('/brandList', function (req, res, next) {
 		},
 		{
 			imgurl: "http://img11.static.yhbimg.com/yhb-img01/2019/06/04/17/01284d201b8110de82cd6a138fa37cd507.jpg?imageView2/2/w/140/h/140/q/60",
-			href: ''
+			href: '/tx'
 		},
 		{
 			imgurl: "http://img11.static.yhbimg.com/yhb-img01/2019/06/04/17/01b9fff0f60d45d0a1d0a126ba5a828954.jpg?imageView2/2/w/140/h/140/q/60",
-			href: ''
+			href: '/tx'
 		},
 		{
 			imgurl: "http://img11.static.yhbimg.com/yhb-img01/2019/06/04/17/01abe4ea9d359b64be29e8a47f51333fdd.jpg?imageView2/2/w/140/h/140/q/60",
-			href: ''
+			href: '/tx'
 		},
 		{
 			imgurl: "http://img10.static.yhbimg.com/yhb-img01/2019/06/04/17/015eefeff818102f6a685cba1dac4a836a.jpg?imageView2/2/w/140/h/140/q/60",
-			href: ''
+			href: '/tx'
 		},
 		{
 			imgurl: "http://img11.static.yhbimg.com/yhb-img01/2019/06/04/17/01992e5f63d20e0df82110189de5c6769e.jpg?imageView2/2/w/140/h/140/q/60",
-			href: ''
+			href: '/tx'
 		},
 		{
 			imgurl: "http://img11.static.yhbimg.com/yhb-img01/2019/06/04/17/019dec02a4dc2eb684c6ea4a3d99249848.jpg?imageView2/2/w/140/h/140/q/60",
-			href: ''
+			href: '/tx'
 		},
 		{
 			imgurl: "http://img11.static.yhbimg.com/yhb-img01/2019/06/04/17/01bf2a89f7f423805ac34ceab6fa66066c.jpg?imageView2/2/w/140/h/140/q/60",
-			href: ''
+			href: '/tx'
 		},
 		{
 			imgurl: "http://img10.static.yhbimg.com/yhb-img01/2019/06/04/17/01d692f46c44307035c20b399fe9676af9.jpg?imageView2/2/w/140/h/140/q/60",
-			href: ''
+			href: '/tx'
 		},
 		{
 			imgurl: "http://img10.static.yhbimg.com/yhb-img01/2019/06/04/17/0186f88c61d3e590eb5ceb8ff158e8eb03.jpg?imageView2/2/w/140/h/140/q/60",
-			href: ''
+			href: '/tx'
 		},
 		{
 			imgurl: "http://img10.static.yhbimg.com/yhb-img01/2019/06/04/17/01d1de9b5d672bcd34904606de30a94d92.jpg?imageView2/2/w/140/h/140/q/60",
-			href: ''
+			href: '/tx'
 		},
 		{
 			imgurl: "http://img11.static.yhbimg.com/yhb-img01/2019/06/04/17/013aee3828e0e20cd14ae9d9f8f8bfce2c.jpg?imageView2/2/w/140/h/140/q/60",
-			href: ''
+			href: '/tx'
 		}
 	]
 
@@ -268,27 +268,33 @@ router.get('/orderFen', function (req, res, next) {
 	var arr = [
 		{
 			imgs:'http://127.0.0.1:3000/images/mine/yh.png',
-			fentitle:'待付款'
+			fentitle:'待付款',
+			href:'/logon'
 		},
 		{
 			imgs:'http://127.0.0.1:3000/images/mine/df.png',
-			fentitle:'待发货'
+			fentitle:'待发货',
+			href:'/logon'
 		},
 		{
 			imgs:'http://127.0.0.1:3000/images/mine/ds.png',
-			fentitle:'待收货'
+			fentitle:'待收货',
+			href:'/logon'
 		},	
 		{
 			cs:'0',
-			fentitle:'商品收藏'
+			fentitle:'商品收藏',
+			href:'/logon'
 		},
 		{
 			cs:'0',
-			fentitle:'品牌收藏'
+			fentitle:'品牌收藏',
+			href:'/logon'
 		},
 		{
 			cs:'0',
-			fentitle:'浏览记录'
+			fentitle:'浏览记录',
+			href:'/logon'
 		}
 	]
 	
@@ -300,22 +306,95 @@ router.get('/orderCen', function (req, res, next) {
 		{
 			img1:'http://127.0.0.1:3000/images/mine/yhj.png',
 			centitle:'优惠劵',
-			imgs:'http://127.0.0.1:3000/images/mine/rt.png'
+			imgs:'http://127.0.0.1:3000/images/mine/rt.png',
+			href:'/logon'
 		},
 		{
 			img1:'http://127.0.0.1:3000/images/mine/money.png',
 			centitle:'有货币',
-			imgs:'http://127.0.0.1:3000/images/mine/rt.png'
+			imgs:'http://127.0.0.1:3000/images/mine/rt.png',
+			href:'/logon'
 		},
 		{
 			img1:'http://127.0.0.1:3000/images/mine/xx.png',
 			centitle:'消息',
-			imgs:'http://127.0.0.1:3000/images/mine/rt.png'
+			imgs:'http://127.0.0.1:3000/images/mine/rt.png',
+			href:'/logon'
 		},	
 		{
 			img1:'http://127.0.0.1:3000/images/mine/fu.png',
 			centitle:'服务与反馈',
-			imgs:'http://127.0.0.1:3000/images/mine/rt.png'
+			imgs:'http://127.0.0.1:3000/images/mine/rt.png',
+			href:'/custom'
+
+		},
+		
+	]
+	
+	res.send(arr)
+});
+//服务与反馈
+router.get('/cusTom', function (req, res, next) {
+	var arr = [
+		{
+			img1:'http://127.0.0.1:3000/images/mine/ufo.png',
+			centitle:'UFO专区',
+			p:'UFO、买家、卖家',
+			imgs:'http://127.0.0.1:3000/images/mine/rt.png',
+		},
+		{
+			img1:'http://127.0.0.1:3000/images/mine/qd.png',
+			centitle:'有货有赚',
+			p:'佣金、分享、提现',
+			imgs:'http://127.0.0.1:3000/images/mine/rt.png',
+		},	
+		{
+			img1:'http://127.0.0.1:3000/images/mine/ddcx.png',
+			centitle:'订单查询',
+			p:'取消订单、修改地址、修改订单',
+			imgs:'http://127.0.0.1:3000/images/mine/rt.png',
+		},
+		{
+			img1:'http://127.0.0.1:3000/images/mine/wl.png',
+			centitle:'物流配送',
+			p:'物流时效、快递选择、运费标准',
+			imgs:'http://127.0.0.1:3000/images/mine/rt.png',
+		},
+		{
+			img1:'http://127.0.0.1:3000/images/mine/zf.png',
+			centitle:'支付问题',
+			p:'在线问题、货到付款、分期付款',
+			imgs:'http://127.0.0.1:3000/images/mine/rt.png',
+		},
+		{
+			img1:'http://127.0.0.1:3000/images/mine/sh.png',
+			centitle:'售后问题',
+			p:'退货、换货、补寄发货',
+			imgs:'http://127.0.0.1:3000/images/mine/rt.png',
+		},
+		{
+			img1:'http://127.0.0.1:3000/images/mine/zhwt.png',
+			centitle:'账户问题',
+			p:'个人信息、账户管理、VIP管理',
+			imgs:'http://127.0.0.1:3000/images/mine/rt.png',
+		},
+		{
+			img1:'http://127.0.0.1:3000/images/mine/qqg.png',
+			centitle:'全球购专区',
+			p:'全球购购买、订单、售后',
+			imgs:'http://127.0.0.1:3000/images/mine/rt.png',
+		},
+		{
+			img1:'http://127.0.0.1:3000/images/mine/sfz.png',
+			centitle:'经营资质',
+			p:'营业执照、经营许可证',
+			imgs:'http://127.0.0.1:3000/images/mine/rt.png',
+		},
+		{
+			img1:'http://127.0.0.1:3000/images/mine/xy.png',
+			centitle:'服务协议、隐私协议',
+			p:'',
+			imgs:'http://127.0.0.1:3000/images/mine/rt.png',
 		},
 		
 	]
