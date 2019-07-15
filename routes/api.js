@@ -65,7 +65,7 @@ router.get('/brandList', function (req, res, next) {
 
 		{
 			imgurl: "http://img11.static.yhbimg.com/yhb-img01/2019/06/04/17/01566a613461f43235adfecc88fcb7660e.jpg?imageView2/2/w/140/h/140/q/60",
-			href: '/mine'
+			href: '/tx'
 		},
 		{
 			imgurl: "http://img11.static.yhbimg.com/yhb-img01/2019/06/04/17/01284d201b8110de82cd6a138fa37cd507.jpg?imageView2/2/w/140/h/140/q/60",
@@ -154,76 +154,88 @@ router.get('/hotBanner', function (req, res, next) {
 //滑动接口
 router.get('/huadong', function (req, res, next) {
 	var arr = [{
-			img: 'http://img13.static.yhbimg.com/goodsimg/2017/07/30/12/02d803ccddbb2d8c6c82cd59cd9bc73692.jpg?imageMogr2/thumbnail/153x206/position/center/quality/60',
-			price: '59.00',
+			img: '//img13.static.yhbimg.com/goodsimg/2019/06/11/11/02086c8cd53780b66639cfafcc46073799.jpg?imageMogr2/thumbnail/450x600/position/center/quality/60',
+			price: '146.00',
 			num: "82人",
-			browse: "正在浏览"
+			browse: "正在浏览",
+			url:'/goods'
 		},
 		{
 			img: 'http://img11.static.yhbimg.com/goodsimg/2017/08/18/18/01147d529fc5eb75060f9237e6a4d940c2.jpg?imageMogr2/thumbnail/153x206/position/center/quality/60',
 			price: '269.00',
 			num: "140人",
-			browse: "正在浏览"
+			browse: "正在浏览",
+			url:'/goods'
 		},
 		{
 			img: 'http://img11.static.yhbimg.com/goodsimg/2019/01/02/11/01865818f1acc954fd93b77c1cf54c2b8e.jpg?imageMogr2/thumbnail/153x206/position/center/quality/60',
 			price: '129.00',
 			num: "134人",
-			browse: "正在浏览"
+			browse: "正在浏览",
+			url:'/goods'
 		},
 		{
 			img: 'http://img12.static.yhbimg.com/goodsimg/2018/09/25/11/02cc3632ef6767ccaf479684c1967580ed.jpg?imageMogr2/thumbnail/153x206/position/center/quality/60',
 			price: '79.00',
 			num: "134人",
-			browse: "正在浏览"
+			browse: "正在浏览",
+			url:'/goods'
 		},
 		{
 			img: 'http://img11.static.yhbimg.com/goodsimg/2018/12/29/19/01cb7ecd8980162e4f5a9e19c2004439c9.jpg?imageMogr2/thumbnail/153x206/position/center/quality/60',
 			price: '109.00',
 			num: "134人",
-			browse: "正在浏览"
+			browse: "正在浏览",
+			url:'/goods'
 		},
 		{
 			img: 'http://img13.static.yhbimg.com/goodsimg/2019/03/21/16/02828618a5561eba5fe47624d8d2c14124.jpg?imageMogr2/thumbnail/153x206/position/center/quality/60',
 			price: '185.00',
 			num: "59人",
-			browse: "正在浏览"
+			browse: "正在浏览",
+			url:'/goods'
 		},
 		{
 			img: 'http://img11.static.yhbimg.com/goodsimg/2016/11/03/18/01ac9117bbf97c19e4f472cf04db3e4157.jpg?imageMogr2/thumbnail/153x206/position/center/quality/60',
 			price: '109.00',
 			num: "111人",
-			browse: "正在浏览"
+			browse: "正在浏览",
+			url:'/goods'
 		},
 		{
 			img: 'http://img11.static.yhbimg.com/goodsimg/2018/09/03/17/019ea6bab8b331c427c69163d9dae080d2.jpg?imageMogr2/thumbnail/153x206/position/center/quality/60',
 			price: '259.00',
 			num: "111人",
-			browse: "正在浏览"
+			browse: "正在浏览",
+			url:'/goods'
 		},
 		{
 			img: 'http://img11.static.yhbimg.com/goodsimg/2018/09/25/15/01457751bf19ea61221cb5cd1441dd3d03.jpg?imageMogr2/thumbnail/153x206/position/center/quality/60',
 			price: '139.00',
 			num: "111人",
-			browse: "正在浏览"
+			browse: "正在浏览",
+			url:'/goods'
 		},
 		{
 			img: 'http://img11.static.yhbimg.com/goodsimg/2018/06/08/10/01cbb2cd88642fbbfbd3984ee475aa5e76.jpg?imageMogr2/thumbnail/153x206/position/center/quality/60',
 			price: '209.00',
 			num: "111人",
-			browse: "正在浏览"
+			browse: "正在浏览",
+			url:'/goods'
 		},
 		{
 			img: 'http://img12.static.yhbimg.com/goodsimg/2018/09/30/18/029e3508d5e949a57fb4d9277f74e71309.jpg?imageMogr2/thumbnail/153x206/position/center/quality/60',
 			price: '109.00',
 			num: "111人",
-			browse: "正在浏览"
+			browse: "正在浏览",
+			url:'/goods'
 		},
 		{
 			img: 'http://img11.static.yhbimg.com/goodsimg/2018/05/26/17/01ce7569f9797c837d28d616cf3cb54788.jpg?imageMogr2/thumbnail/153x206/position/center/quality/60',
 			price: '45.00',
 			num: "178人",
-			browse: "正在浏览"
+			browse: "正在浏览",
+			url:'/goods'
 		}
 	]
 	res.send(arr)
@@ -4652,6 +4664,72 @@ router.get('/cateListright6', function(req, res, next) {
 		},
 	]
   	res.send(arr);
+});
+
+router.get('/good', function (req, res, next) {
+	var arr = [
+			'//img13.static.yhbimg.com/goodsimg/2019/06/11/11/02086c8cd53780b66639cfafcc46073799.jpg?imageMogr2/thumbnail/450x600/position/center/quality/60',
+			'//img11.static.yhbimg.com/goodsimg/2019/06/11/11/0150525465841f76fe272916b4a7cfd24c.jpg?imageMogr2/thumbnail/450x600/position/center/quality/60',
+			'//img12.static.yhbimg.com/goodsimg/2019/06/17/11/0230ca555cf52c8a7a0a0b08f606a3abf2.jpg?imageMogr2/thumbnail/450x600/position/center/quality/60',
+			'//img12.static.yhbimg.com/goodsimg/2019/06/17/11/0213581391b87ab710aa8871b3631c62ac.jpg?imageMogr2/thumbnail/450x600/position/center/quality/60'
+   ]
+	res.send(arr)
+});
+
+router.get('/goodpic', function (req, res, next) {
+	var arr = [
+		'//img12.static.yhbimg.com/goodsimg/2019/06/11/11/027aa71478d607ac8ff96c76ecc30dbcc2.jpg?imageMogr2/thumbnail/750x/quality/60/interlace/1/format/webp',
+		'//img11.static.yhbimg.com/goodsimg/2019/06/11/11/0176be894e655e53aeea0fe911d6082c8e.jpg?imageMogr2/thumbnail/750x/quality/60/interlace/1/format/webp',
+		'//img11.static.yhbimg.com/goodsimg/2019/06/11/11/016a937dd7f349152b800074ca7218e8ef.jpg?imageMogr2/thumbnail/750x/quality/60/interlace/1/format/webp',
+		'//img12.static.yhbimg.com/goodsimg/2019/06/11/11/020a70de803d9b815da96a385a4fc01cab.jpg?imageMogr2/thumbnail/750x/quality/60/interlace/1/format/webp',
+		'//img12.static.yhbimg.com/goodsimg/2019/06/11/11/021b78b5d31d168f04b822968f32aeef9e.jpg?imageMogr2/thumbnail/750x/quality/60/interlace/1/format/webp',
+		'//img12.static.yhbimg.com/goodsimg/2019/06/11/11/029cacd76dce321cf243170043995e72ba.jpg?imageMogr2/thumbnail/750x/quality/60/interlace/1/format/webp',
+		'//img12.static.yhbimg.com/goodsimg/2019/06/11/11/02696dccaeb12129f217a07b4f4d201b2f.jpg?imageMogr2/thumbnail/750x/quality/60/interlace/1/format/webp',
+		'//img12.static.yhbimg.com/goodsimg/2019/06/11/11/02bf1266b2dcc076bb0c4af4e6f6810485.jpg?imageMogr2/thumbnail/750x/quality/60/interlace/1/format/webp',
+		'//img11.static.yhbimg.com/goodsimg/2019/06/11/11/0189188f02f17b27c932970d68bbe5acb3.jpg?imageMogr2/thumbnail/750x/quality/60/interlace/1/format/webp',
+		'//img12.static.yhbimg.com/goodsimg/2019/06/11/11/0281db5ff70949e4cf2c938d7586bc11e1.jpg?imageMogr2/thumbnail/750x/quality/60/interlace/1/format/webp',
+		'//img11.static.yhbimg.com/goodsimg/2019/06/11/11/01eb17f010557e801fdcb907d12e926629.jpg?imageMogr2/thumbnail/750x/quality/60/interlace/1/format/webp',
+		'//img12.static.yhbimg.com/goodsimg/2019/06/11/11/02dc71ebb5ef196378ab1690ca15a1f0b3.jpg?imageMogr2/thumbnail/750x/quality/60/interlace/1/format/webp',
+		'//img12.static.yhbimg.com/goodsimg/2019/06/11/11/02a28f85681e97fd2fbd2d092c93d2e82d.jpg?imageMogr2/thumbnail/750x/quality/60/interlace/1/format/webp',
+		'//img12.static.yhbimg.com/goodsimg/2019/06/11/11/02e53e37ec16b87e4778b233646b166250.jpg?imageMogr2/thumbnail/750x/quality/60/interlace/1/format/webp',
+		'//img12.static.yhbimg.com/goodsimg/2019/06/11/11/020bb590c8c38d8e7898fbcb4e6c30e30e.jpg?imageMogr2/thumbnail/750x/quality/60/interlace/1/format/webp',
+		'//img12.static.yhbimg.com/goodsimg/2019/06/11/11/02df88decd1bb98629f469430909341cb5.jpg?imageMogr2/thumbnail/750x/quality/60/interlace/1/format/webp',
+		'//img11.static.yhbimg.com/goodsimg/2019/06/11/11/01acde39e2d8a786f18ebaaf747534aac2.jpg?imageMogr2/thumbnail/750x/quality/60/interlace/1/format/webp',
+		'//img12.static.yhbimg.com/goodsimg/2019/06/11/11/02e632c4a6df0cc153da11d658f80fd25b.jpg?imageMogr2/thumbnail/750x/quality/60/interlace/1/format/webp',
+		'//img11.static.yhbimg.com/goodsimg/2019/06/11/11/0153e3dda07417fc533986aa8d6c0bb2d6.jpg?imageMogr2/thumbnail/750x/quality/60/interlace/1/format/webp',
+		'//img12.static.yhbimg.com/goodsimg/2019/06/11/11/025b5c09630ce38d003c8f30935fe6d79d.jpg?imageMogr2/thumbnail/750x/quality/60/interlace/1/format/webp',
+		'//img12.static.yhbimg.com/goodsimg/2019/06/11/11/0264be9c1622e1d5806705004edac7ccb6.jpg?imageMogr2/thumbnail/750x/quality/60/interlace/1/format/webp',
+		'//img12.static.yhbimg.com/goodsimg/2019/06/11/11/029b9afa63fcce995ce8a7ec91b23800d9.jpg?imageMogr2/thumbnail/750x/quality/60/interlace/1/format/webp',
+		'//img12.static.yhbimg.com/goodsimg/2019/06/11/11/02374fd757d6fc4185d2dbac74e0a84e90.jpg?imageMogr2/thumbnail/750x/quality/60/interlace/1/format/webp',
+		'//img11.static.yhbimg.com/goodsimg/2019/06/11/11/01d483653fb5fd019509c167005b1856c7.jpg?imageMogr2/thumbnail/750x/quality/60/interlace/1/format/webp',
+		'//img12.static.yhbimg.com/goodsimg/2019/06/11/11/020922f44bc6ebaff93d418f83797823c9.jpg?imageMogr2/thumbnail/750x/quality/60/interlace/1/format/webp',
+		'//img11.static.yhbimg.com/goodsimg/2019/06/11/11/0165bfabc896f60aa0bae2869a7df20643.jpg?imageMogr2/thumbnail/750x/quality/60/interlace/1/format/webp',
+		'//img12.static.yhbimg.com/goodsimg/2019/06/11/11/02939b64b4b0cbd7087b78125f5fff85b0.jpg?imageMogr2/thumbnail/750x/quality/60/interlace/1/format/webp',
+		'//img12.static.yhbimg.com/goodsimg/2019/06/11/11/02ffc39c604a399cd9faa63be7a088d320.jpg?imageMogr2/thumbnail/750x/quality/60/interlace/1/format/webp',
+		'//img12.static.yhbimg.com/goodsimg/2019/06/11/11/02c2232c2a857ab5572d2ea7834b1c1bf5.jpg?imageMogr2/thumbnail/750x/quality/60/interlace/1/format/webp',
+		'//img11.static.yhbimg.com/goodsimg/2019/06/11/11/0114954a15473bc2ee5c6ab3830d2c764f.jpg?imageMogr2/thumbnail/750x/quality/60/interlace/1/format/webp',
+		'//img12.static.yhbimg.com/goodsimg/2019/06/11/11/0249f7b746ad84c2dd02132fd39f207800.jpg?imageMogr2/thumbnail/750x/quality/60/interlace/1/format/webp',
+		'//img12.static.yhbimg.com/goodsimg/2019/06/17/11/0230ca555cf52c8a7a0a0b08f606a3abf2.jpg?imageMogr2/thumbnail/750x/quality/60/interlace/1/format/webp',
+		'//img13.static.yhbimg.com/goodsimg/2019/06/17/11/020760db730e6730e153bc10c26a8f120b.jpg?imageMogr2/thumbnail/750x/quality/60/interlace/1/format/webp',
+		'//img12.static.yhbimg.com/goodsimg/2019/06/17/11/025e611e917935316ed2c662f47895f95a.jpg?imageMogr2/thumbnail/750x/quality/60/interlace/1/format/webp',
+		'//img12.static.yhbimg.com/goodsimg/2019/06/17/11/029fab7f6fdcaf816f8233aa4a8153a2c0.jpg?imageMogr2/thumbnail/750x/quality/60/interlace/1/format/webp'
+  ]
+	res.send(arr)
+});
+
+
+router.get('/goods', function (req, res, next) {
+	var arr = [
+		{
+		  
+		  h: 'TYAKASHA塔卡沙 X POPEYE 大力水手联名系列 童款100-140天蓝色短袖T恤',
+		  newNum: '¥145',
+		  oldNum: '¥158',
+		  xia: '下单8.8折' 
+		}
+	  ]
+	  
+	res.send(arr)
 });
 
 module.exports = router;
