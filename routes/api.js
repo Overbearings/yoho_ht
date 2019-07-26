@@ -16,27 +16,27 @@ router.get('/banner', function (req, res, next) {
 router.get('/category', function (req, res, next) {
 	var arr = [{
 			imgurl: 'http://img10.static.yhbimg.com/yhb-img01/2017/02/03/09/010a6210ab22aea2ab304727a02a0b86c1.png?imageView2/2/w/98/h/98/q/60',
-			href: '/mine',
+			href: '/hotselling',
 			cpm: '新品到着'
 		},
 		{
 			imgurl: 'http://img11.static.yhbimg.com/yhb-img01/2017/02/03/09/01c07611bfd87c167b614e76fd4e648d1a.png?imageView2/2/w/98/h/98/q/60',
-			href: '',
+			href: '/hotselling',
 			cpm: '品牌一览'
 		},
 		{
 			imgurl: 'http://img10.static.yhbimg.com/yhb-img01/2017/02/03/09/0136b1097e58f1da29b8aa5e11014530d6.png?imageView2/2/w/98/h/98/q/60',
-			href: '',
+			href: '/hotselling',
 			cpm: '玩具娱乐'
 		},
 		{
 			imgurl: 'http://img10.static.yhbimg.com/yhb-img01/2017/02/03/09/01a59222ccd78f99235ceb010e473c40e5.png?imageView2/2/w/98/h/98/q/60',
-			href: '',
+			href: '/sort',
 			cpm: '全部分类'
 		},
 		{
 			imgurl: 'http://img11.static.yhbimg.com/yhb-img01/2017/02/03/09/017a3e5b1c186344dafa450ca016316be0.png?imageView2/2/w/98/h/98/q/60',
-			href: '',
+			href: '/hotselling',
 			cpm: '中小童'
 		},
 		{
@@ -46,12 +46,12 @@ router.get('/category', function (req, res, next) {
 		},
 		{
 			imgurl: 'http://img11.static.yhbimg.com/yhb-img01/2017/02/03/09/0137b842d791e17b2f432ec6566afe109f.png?imageView2/2/w/98/h/98/q/60',
-			href: '',
+			href: '/hotselling',
 			cpm: '装酷必备'
 		},
 		{
 			imgurl: 'http://img10.static.yhbimg.com/yhb-img01/2017/02/03/09/01d3b9f604a085e0c9c9c16a76bc1f882f.png?imageView2/2/w/98/h/98/q/60',
-			href: '',
+			href: '/hotselling',
 			cpm: '折扣专区'
 		}
 	]
@@ -245,15 +245,17 @@ router.get('/huadong', function (req, res, next) {
 // 首页底部图片
 router.get('/botpic', function (req, res, next) {
 	var arr = [{
-			imgs: 'http://img11.static.yhbimg.com/yhb-img01/2019/04/08/15/01332fd25f4ccd8988a21a6b44a6cd949f.jpg?imageView2/3/w/640/h/200/q/60'
+			imgs: 'http://img11.static.yhbimg.com/yhb-img01/2019/04/08/15/01332fd25f4ccd8988a21a6b44a6cd949f.jpg?imageView2/3/w/640/h/200/q/60',
+			url:'/hotselling'
 		},
 		{
-			imgs: 'http:////img11.static.yhbimg.com/yhb-img01/2019/04/08/15/0117ace5690e73d6687da6ff4ec617c3d8.jpg?imageView2/3/w/640/h/200/q/60'
+			imgs: 'http:////img11.static.yhbimg.com/yhb-img01/2019/04/08/15/0117ace5690e73d6687da6ff4ec617c3d8.jpg?imageView2/3/w/640/h/200/q/60',
+			url:'/hotselling'
 		},
 		{
-			imgs: 'http://img11.static.yhbimg.com/yhb-img01/2019/04/08/15/012a6f64cf2c5bd9557caa882589525de9.jpg?imageView2/3/w/640/h/200/q/60'
+			imgs: 'http://img11.static.yhbimg.com/yhb-img01/2019/04/08/15/012a6f64cf2c5bd9557caa882589525de9.jpg?imageView2/3/w/640/h/200/q/60',
+			url:'/hotselling'
 		}
-
 
 	]
 	res.send(arr)
@@ -4848,7 +4850,6 @@ router.get('/slacksList', function(req, res, next) {
 	res.send(arr);
 });
 
-<<<<<<< HEAD
 router.get('/cateListright6', function(req, res, next) {
 	var arr=[
 		{
@@ -5003,9 +5004,7 @@ router.get('/wangguan', function (req, res, next) {
 
   res.send(arr)
 })
-=======
 
->>>>>>> 4fc782a99f599a3dd23e3f6d2ca5dacb86b74c30
 
 router.get('/good', function (req, res, next) {
 	var arr = [
@@ -5072,5 +5071,8 @@ router.get('/goods', function (req, res, next) {
 	  
 	res.send(arr)
 });
+
+
+
 
 module.exports = router;
